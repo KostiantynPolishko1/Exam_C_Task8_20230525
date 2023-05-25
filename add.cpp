@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<string>
+#include<Windows.h>
 #include"header.h"
 using namespace std;
 
@@ -14,6 +15,8 @@ void add(vector<Item>& item, int& size)
 	item.reserve(size2);
 
 	Item *temp = new Item[n];
+
+	SetConsoleCP(1251);
 
 	while (i < n)
 	{
@@ -38,7 +41,10 @@ void add(vector<Item>& item, int& size)
 
 		item.push_back(temp[i]);
 		i++;
+		system("CLS");
 	} 
+
+	SetConsoleCP(1252);
 
 	delete[] temp;
 	temp = nullptr;

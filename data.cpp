@@ -6,6 +6,7 @@ using namespace std;
 
 void Data(vector<Item> &item, int& size)
 {
+
 	Item temp[10];
 	temp[0] = { "Молоко", "Яготын", 20, "Молочка", "20.05.2023", "25.05.2023" };
 	temp[1] = { "Сыр", "Дружба", 21, "Молочка", "19.05.2023", "24.05.2023" };
@@ -22,6 +23,6 @@ void Data(vector<Item> &item, int& size)
 
 	for(int i = 0; i < size; i++)
 		item.push_back(temp[i]);
-
+	
 	print(item, size);
 }

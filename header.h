@@ -24,6 +24,8 @@ int checkV();
 void Data(vector<Item> &item, int& size);
 
 void add(vector<Item>& item, int& size);
+void remove(vector<Item>& item, int& size);
+
 void find(vector<Item>& item, int& size, int n);
 
 void sortPrice(vector<Item>& item, int& size);

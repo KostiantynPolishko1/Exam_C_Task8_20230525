@@ -127,12 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="modify.cpp" />
+    <ClCompile Include="add.cpp" />
     <ClCompile Include="checkV.cpp" />
     <ClCompile Include="data.cpp" />
     <ClCompile Include="find.cpp" />
     <ClCompile Include="print.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="remove.cpp" />
     <ClCompile Include="sort.cpp" />
   </ItemGroup>
   <ItemGroup>

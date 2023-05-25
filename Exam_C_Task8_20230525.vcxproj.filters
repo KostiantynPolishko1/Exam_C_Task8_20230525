@@ -33,7 +33,10 @@
     <ClCompile Include="find.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="modify.cpp">
+    <ClCompile Include="add.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="remove.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

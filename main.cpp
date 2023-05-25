@@ -15,10 +15,10 @@ int main()
 	vector<Item> item;
 	item.reserve(size);
 
-	cout << "\n Данные склада дата: ";
 	Data(item, size);
 
-	add(item, size);
+	//add(item, size);
+	remove(item, size);
 
 	//sortPrice(item, size);
 	//sortGroup(item, size);
