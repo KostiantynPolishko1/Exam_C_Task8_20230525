@@ -29,7 +29,7 @@ void find(vector<Item>& item, int& size, int n)
 		
 		if (fname == "q")
 		{
-			cout << "\n\tСТОП ПОИСК. EXIT\n";
+			cout << "\n\tСТОП ПОИСК. ВЫХОД\n";
 			break;
 		}
 		for (int i = 0; i < size; i++)
@@ -59,9 +59,6 @@ void find(vector<Item>& item, int& size, int n)
 
 		}
 
-		num.resize(count);
-		print(item, num);
-
 		if (tf)
 		{
 			cout << "\tНе найден товар по наименованию\n";
@@ -69,6 +66,53 @@ void find(vector<Item>& item, int& size, int n)
 		}
 		SetConsoleCP(1252);
 
+		num.resize(count);
+		system("CLS");
+		print(item, num);
+		cout
+			<< "\n\t1 - По названию"
+			<< "\n\t2 - Производителю"
+			<< "\n\t3 - По цене"
+			<< "\n\t4 - Группе товара"
+			<< "\n\t5 - Дате поступления на склад"
+			<< "\n\t6 - Сроку годности"
+			<< endl;
+
 	} while (tf != false);
 
+}
+
+void find(vector<Item>& item, int& size)
+{
+	int n = 0;
+	cout
+		<< "\n\t1 - По названию"
+		<< "\n\t2 - Производителю"
+		<< "\n\t3 - По цене"
+		<< "\n\t4 - Группе товара"
+		<< "\n\t5 - Дате поступления на склад"
+		<< "\n\t6 - Сроку годности"
+		<< endl;
+
+	while (true)
+	{
+		cout << "\n Введите номер подоперации -> ";
+
+	restart:
+		n = checkV();
+		if (n > 6 || n == 0)
+		{
+			cout << "\n\t Значение вне диапазона 1...6";
+			goto restart;
+		}
+		find(item, size, n);
+
+		cout << "\n Для выхода нажмите \"0\" или \"1\" продолжить: ";
+		n = checkV();
+		if (!n)
+		{
+			cout << "\n\tСТОП ИЗМЕНЕНИЯ. ВЫХОД\n";
+			break;
+		}
+	}
 }

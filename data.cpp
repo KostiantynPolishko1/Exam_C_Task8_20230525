@@ -23,6 +23,4 @@ void Data(vector<Item> &item, int& size)
 
 	for(int i = 0; i < size; i++)
 		item.push_back(temp[i]);
-	
-	print(item, size);
 }

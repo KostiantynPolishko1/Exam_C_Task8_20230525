@@ -9,22 +9,38 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	int size = 10;
+	int size = 10, fun = 0;
 
-	//Item item[1000];
 	vector<Item> item;
 	item.reserve(size);
 
-	Data(item, size);
+	print();
 
-	//add(item, size);
-	//remove(item, size);
-	modify(item, size);
+	bool tf = true;
+	while (tf)
+	{
+		Data(item, size);
 
-	//sortPrice(item, size);
-	//sortGroup(item, size);
+		cout << "\n  0 - ÂÛÕÎÄ!!!";
+		cout << "\n Ââåäèòå íîìåð îïåðàöèè -> ";
 
-	//find(item, size, 2);
+		fun = checkV();
+		if (fun == 0)
+		{
+			cout << "\n\tÑÒÎÏ ÈÇÌÅÍÅÍÈß. ÂÛÕÎÄ\n";
+			break;
+		}
+		fun--;
+
+		if (fun > 5)
+		{
+			cout << "\n\tÇíà÷åíèå âíå äèàïàçîíà 1...5";
+			continue;
+		}
+
+		void(*operation[6])(vector<Item> &, int& ) = { print, add, remove, modify, find, sort};
+		operation[fun](item, size);
+	}
 
 	return 0;
 }

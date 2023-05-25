@@ -1,50 +1,81 @@
 #include<iostream>
 #include<vector>
 #include<string>
+#include<Windows.h>
 #include"header.h"
 using namespace std;
 
-void sortPrice(vector<Item>& item, int& size)
+void sort(vector<Item>& item, int& size, int &n)
 {
-	cout << "\n Сортировка по цене";
+	string str{};
+	if (n == 1)
+		str = "цене";
+	else
+		str = "группе товаров";
+
+	cout << "\n Сортировка по " << str;
 
 	for (int i = 0; i < size; i++)
 	{
 		int sum = 0;
 		for (int j = 0; j < size - 1; j++)
 		{
-			if (item[j].price > item[j + 1].price)
-			{
-				swap(item[j], item[j + 1]);
-				sum++;
-			}
+			if (n == 1)
+				if (item[j].group > item[j + 1].group)
+				{
+					swap(item[j], item[j + 1]);
+					sum++;
+				}
+			else
+				if (item[j].price > item[j + 1].price)
+				{
+					swap(item[j], item[j + 1]);
+					sum++;
+				}
 		}
 		if (!sum)
 			break;
 	}
 
+	system("CLS");
 	print(item, size);
+
 }
 
-void sortGroup(vector<Item>& item, int& size)
+void sort(vector<Item>& item, int& size)
 {
-	cout << "\n Сортировка по группе товаров";
+	int n = 0;
+	cout
+		<< "\n\t1 - По цене"
+		<< "\n\t2 - По группе товара"
+		<< endl;
 
-	for (int i = 0; i < size; i++)
+	while (true)
 	{
-		int sum = 0;
-		for (int j = 0; j < size - 1; j++)
+		cout << "\n Введите номер подоперации -> ";
+
+	restart:
+		n = checkV();
+		if (n > 2 || n == 0)
 		{
-			if (item[j].group > item[j + 1].group)
-			{
-				swap(item[j], item[j + 1]);
-				sum++;
-			}
+			cout << "\n\t Значение вне диапазона 1...6";
+			goto restart;
 		}
-		if (!sum)
+		sort(item, size, n);
+
+		cout << "\n Для выхода нажмите \"0\" или \"1\" продолжить: ";
+		n = checkV();
+		if (!n)
+		{
+			system("CLS");
+			cout << "\n\tСТОП ИЗМЕНЕНИЯ. ВЫХОД\n";
+			print();
 			break;
+		}
+
+		cout
+			<< "\n\t1 - По цене"
+			<< "\n\t2 - По группе товара"
+			<< endl;
 	}
-
-	print(item, size);
-
 }
