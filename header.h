@@ -8,7 +8,9 @@ struct Item
 	string
 		name,
 		manufacture;
+
 	int price;
+
 	string
 		group,
 		date_reciev,
@@ -22,11 +24,12 @@ int checkV();
 void Data(Item item[], int& size);
 
 void print(Item item[], int& size);
+void print(int &n);
 void print(Item item[], vector<int>& num);
 
 void sortPrice(Item item[], int& size);
 void sortGroup(Item item[], int& size);
 
-void findName(Item item[], int& size);
+void find(Item item[], int& size, int n);
 
 #endif

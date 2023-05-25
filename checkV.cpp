@@ -11,7 +11,7 @@ int checkV()
 		cin >> a;
 		if (cin.fail()) // if the previous extraction was unsuccessful,
 		{
-			cout << "Incorrect input. Enter int value: ";
+			cout << "\tIncorrect input. Enter int value: ";
 			cin.clear(); // then return the cin to 'normal' mode of operation
 			cin.ignore(32767, '\n'); // and remove the previous input values from the input buffer
 		}

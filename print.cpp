@@ -39,3 +39,33 @@ void print(Item item[], vector<int> &num)
 			<< item[num[i]].date_reciev << "\t"
 			<< item[num[i]].date_expired << endl;
 }
+
+void print(int& n)
+{
+	string txt{};
+	switch (n)
+	{
+	case 1:
+		txt = "\"Наименование\"";
+		break;
+	case 2:
+		txt = "\"Производитель\"";
+		break;
+	case 3:
+		txt = "\"Цена\"";
+		break;
+	case 4:
+		txt = "\"Группа товара\"";
+		break;
+	case 5:
+		txt = "\"Дата поступления\"";
+		break;
+	case 6:
+		txt = "\"Срок годности\"";
+		break;
+	default :
+		txt = "\"Данные\"";
+	}
+
+	cout << "\n\tВведите " << txt << ", или q - ВЫХОД:\t";
+}

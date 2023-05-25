@@ -17,9 +17,8 @@ int main()
 
 	//sortPrice(item, size);
 	//sortGroup(item, size);
-	findName(item, size);
 
-	//int x = checkV();
+	find(item, size, 2);//find by name
 
 	return 0;
 }
