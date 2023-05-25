@@ -11,8 +11,11 @@ int main()
 	int size = 9;
 
 	Item item[1000];
+
+	cout << "\n Данные склада дата: ";
 	Data(item, size);
 	printData(item, size);
+	sortPrice(item, size);
 
 	//int x = checkV();
 

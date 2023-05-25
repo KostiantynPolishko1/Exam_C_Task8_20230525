@@ -20,5 +20,6 @@ struct Item
 int checkV();
 void Data(Item item[], int& size);
 void printData(Item item[], int& size);
+void sortPrice(Item item[], int& size);
 
 #endif
