@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 #include<string>
 using namespace std;
 
@@ -19,9 +20,13 @@ struct Item
 
 int checkV();
 void Data(Item item[], int& size);
-void printData(Item item[], int& size);
+
+void print(Item item[], int& size);
+void print(Item item[], vector<int>& num);
 
 void sortPrice(Item item[], int& size);
 void sortGroup(Item item[], int& size);
+
+void findName(Item item[], int& size);
 
 #endif

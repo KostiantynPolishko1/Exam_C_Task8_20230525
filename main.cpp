@@ -8,15 +8,16 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	int size = 9;
+	int size = 10;
 
 	Item item[1000];
 
 	cout << "\n Данные склада дата: ";
 	Data(item, size);
-	printData(item, size);
-	sortPrice(item, size);
-	sortGroup(item, size);
+
+	//sortPrice(item, size);
+	//sortGroup(item, size);
+	findName(item, size);
 
 	//int x = checkV();
 

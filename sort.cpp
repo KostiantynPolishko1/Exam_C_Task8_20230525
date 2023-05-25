@@ -22,7 +22,7 @@ void sortPrice(Item item[], int& size)
 			break;
 	}
 
-	printData(item, size);
+	print(item, size);
 }
 
 void sortGroup(Item item[], int& size)
@@ -44,6 +44,6 @@ void sortGroup(Item item[], int& size)
 			break;
 	}
 
-	printData(item, size);
+	print(item, size);
 
 }
