@@ -131,7 +131,7 @@
     <ClCompile Include="data.cpp" />
     <ClCompile Include="printData.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="sortPrice.cpp" />
+    <ClCompile Include="sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header.h" />

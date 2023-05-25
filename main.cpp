@@ -16,6 +16,7 @@ int main()
 	Data(item, size);
 	printData(item, size);
 	sortPrice(item, size);
+	sortGroup(item, size);
 
 	//int x = checkV();
 
