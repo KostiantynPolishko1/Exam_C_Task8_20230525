@@ -4,7 +4,7 @@
 #include"header.h"
 using namespace std;
 
-void print(Item item[], int& size)
+void print(vector<Item> &item, int& size)
 {
 	cout
 		<< "\n| Поз " << "| Наименование " << "| Производитель " << "| Цена"
@@ -23,7 +23,7 @@ void print(Item item[], int& size)
 	}
 }
 
-void print(Item item[], vector<int> &num)
+void print(vector<Item>& item, vector<int> &num)
 {
 	cout
 		<< "\n| Поз " << "| Наименование " << "| Производитель " << "| Цена"

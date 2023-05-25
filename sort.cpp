@@ -1,9 +1,10 @@
 #include<iostream>
+#include<vector>
 #include<string>
 #include"header.h"
 using namespace std;
 
-void sortPrice(Item item[], int& size)
+void sortPrice(vector<Item>& item, int& size)
 {
 	cout << "\n Сортировка по цене";
 
@@ -25,7 +26,7 @@ void sortPrice(Item item[], int& size)
 	print(item, size);
 }
 
-void sortGroup(Item item[], int& size)
+void sortGroup(vector<Item>& item, int& size)
 {
 	cout << "\n Сортировка по группе товаров";
 

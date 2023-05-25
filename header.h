@@ -21,15 +21,16 @@ struct Item
 #define HEADER_H
 
 int checkV();
-void Data(Item item[], int& size);
+void Data(vector<Item> &item, int& size);
 
-void print(Item item[], int& size);
+void add(vector<Item>& item, int& size);
+void find(vector<Item>& item, int& size, int n);
+
+void sortPrice(vector<Item>& item, int& size);
+void sortGroup(vector<Item>& item, int& size);
+
+void print(vector<Item>& item, int& size);
 void print(int &n);
-void print(Item item[], vector<int>& num);
-
-void sortPrice(Item item[], int& size);
-void sortGroup(Item item[], int& size);
-
-void find(Item item[], int& size, int n);
+void print(vector<Item>& item, vector<int>& num);
 
 #endif

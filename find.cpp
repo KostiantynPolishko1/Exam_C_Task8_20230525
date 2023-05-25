@@ -5,7 +5,7 @@
 #include"header.h"
 using namespace std;
 
-void find(Item item[], int& size, int n)
+void find(vector<Item>& item, int& size, int n)
 {
 	setlocale(LC_ALL, "Russian");
 
