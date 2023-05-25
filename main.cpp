@@ -18,7 +18,8 @@ int main()
 	Data(item, size);
 
 	//add(item, size);
-	remove(item, size);
+	//remove(item, size);
+	modify(item, size);
 
 	//sortPrice(item, size);
 	//sortGroup(item, size);
