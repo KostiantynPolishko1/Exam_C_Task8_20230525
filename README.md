@@ -1,7 +1,8 @@
 ISTEP Academy
 BR211
-struct, vector, overload of functions
+struct, vector, header file, overload functions
 # Exam_C_Task8_20230525
+
 Восьмое задание
 Создайте приложение «Склад». Приложение должно реализовывать такую
 функциональность:
