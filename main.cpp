@@ -15,13 +15,14 @@ int main()
 	vector<Item> item;
 	item.reserve(size);
 
+	Data(item, size);
 	print();
 
 	bool tf = true;
 	while (tf)
 	{
-		Data(item, size);
-		SetConsoleCP(1251);
+		
+
 		cout << "\n  0 - ВЫХОД!!!";
 		cout << "\n Введите номер операции -> ";
 
@@ -38,7 +39,7 @@ int main()
 			cout << "\n\tЗначение вне диапазона 1...5";
 			continue;
 		}
-		SetConsoleCP(1252);
+
 		void(*operation[6])(vector<Item> &, int& ) = { print, add, remove, modify, find, sort};
 		operation[fun](item, size);
 	}

@@ -46,6 +46,7 @@ void sort(vector<Item>& item, int& size)
 {
 	int n = 0;
 	cout
+		<< "\n Сортировка:"
 		<< "\n\t1 - По цене"
 		<< "\n\t2 - По группе товара"
 		<< endl;

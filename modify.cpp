@@ -22,29 +22,30 @@ void modify(vector<Item>& item, int& size)
 		}
 
 		cout << "\n Поз " << i+1 << endl;
-		cout << "\n Наименование: ";
+		cout << " Наименование: ";
 		getline(cin, item[i].name);
 
-		cout << "\n Производитель: ";
+		cout << " Производитель: ";
 		getline(cin, item[i].manufacture);
 
-		cout << "\n Цена: ";
+		cout << " Цена: ";
 		item[i].price = checkV();
 
-		cout << "\n Группа товара: ";
+		cout << " Группа товара: ";
 		getline(cin, item[i].group);
 
-		cout << "\n Дата поступления: ";
+		cout << " Дата поступления: ";
 		getline(cin, item[i].date_reciev);
 
-		cout << "\n Срок годности: ";
+		cout << " Срок годности: ";
 		getline(cin, item[i].date_expired);
 
 		system("CLS");
 		SetConsoleCP(1252);
 		print(item, size);
+		print();
 
-		cout << "\n Для выхода нажмите \"0\": ";
+		cout << "\n Для нажмите \"0\" - выход или \"1\" - продолжить: ";
 		i = checkV();
 		if (!i)
 		{

@@ -62,6 +62,7 @@ void find(vector<Item>& item, int& size, int n)
 		if (tf)
 		{
 			cout << "\tÍå íàéäåí òîâàð ïî íàèìåíîâàíèþ\n";
+			print(n);
 			continue;
 		}
 		SetConsoleCP(1252);
@@ -112,6 +113,7 @@ void find(vector<Item>& item, int& size)
 		if (!n)
 		{
 			cout << "\n\tÑÒÎÏ ÈÇÌÅÍÅÍÈß. ÂÛÕÎÄ\n";
+			print();
 			break;
 		}
 	}
