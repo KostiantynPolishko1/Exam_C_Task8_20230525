@@ -4,6 +4,8 @@
 #include"header.h"
 using namespace std;
 
+//.cpp files changed format in UTF-8 with BOM
+
 void print(vector<Item> &item, int& size)
 {
 	cout << "\n Данные склада: ";

@@ -5,6 +5,8 @@
 #include"header.h"
 using namespace std;
 
+//.cpp files changed format in UTF-8 with BOM
+
 void modify(vector<Item>& item, int& size)
 {
 	int i = 0;

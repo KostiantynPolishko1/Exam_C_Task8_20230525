@@ -3,6 +3,8 @@
 #include"header.h"
 using namespace std;
 
+//.cpp files changed format in UTF-8 with BOM
+
 int checkV()
 {
 	int a;

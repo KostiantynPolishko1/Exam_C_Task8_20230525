@@ -5,6 +5,8 @@
 #include"header.h"
 using namespace std;
 
+//.cpp files changed format in UTF-8 with BOM
+
 void find(vector<Item>& item, int& size, int n)
 {
 	setlocale(LC_ALL, "Russian");
