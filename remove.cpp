@@ -8,19 +8,19 @@ using namespace std;
 void remove(vector<Item>& item, int& size)
 {
 	int n = 0, j = 0;
-	cout << "\n Ââåäèòå êîë-âî óäàëÿåìûõ ïîçèöèé: ";
+	cout << "\n Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑƒÐ´Ð°Ð»ÑÐµÐ¼Ñ‹Ñ… Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹: ";
 	n = checkV();
 
 	int* arr = new int[n];
 
 	while (j < n)
 	{
-		cout << " Ââåäèòå íîìåðà óäàëÿåìûõ ïîçèöèé: ";
+		cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€Ð° ÑƒÐ´Ð°Ð»ÑÐµÐ¼Ñ‹Ñ… Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹: ";
 
 		arr[j] = checkV()-1;
 		if (arr[j] > size + n)
 		{
-			cout << "\n Çíà÷åíèå âíå äèàïàçîíà 1..." << size << endl;
+			cout << "\n Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð²Ð½Ðµ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð° 1..." << size << endl;
 			continue;
 		}
 		j++;
