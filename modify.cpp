@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<vector>
 #include<string>
 #include<Windows.h>
@@ -14,32 +14,32 @@ void modify(vector<Item>& item, int& size)
 	SetConsoleCP(1251);
 	while (true)
 	{
-		cout << "\n Óêàæèòå ïîçèöèþ äëÿ èçìåíåíèÿ: ";
+		cout << "\n Ð£ÐºÐ°Ð¶Ð¸Ñ‚Ðµ Ð¿Ð¾Ð·Ð¸Ñ†Ð¸ÑŽ Ð´Ð»Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ: ";
 		i = checkV();
 		i--;
 		if (i > size)
 		{
-			cout << "\n Çíà÷åíèå âíå äèàïàçîíà 1..." << size << endl;
+			cout << "\n Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð²Ð½Ðµ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð° 1..." << size << endl;
 			continue;
 		}
 
-		cout << "\n Ïîç " << i+1 << endl;
-		cout << " Íàèìåíîâàíèå: ";
+		cout << "\n ÐŸÐ¾Ð· " << i+1 << endl;
+		cout << " ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ: ";
 		getline(cin, item[i].name);
 
-		cout << " Ïðîèçâîäèòåëü: ";
+		cout << " ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ: ";
 		getline(cin, item[i].manufacture);
 
-		cout << " Öåíà: ";
+		cout << " Ð¦ÐµÐ½Ð°: ";
 		item[i].price = checkV();
 
-		cout << " Ãðóïïà òîâàðà: ";
+		cout << " Ð“Ñ€ÑƒÐ¿Ð¿Ð° Ñ‚Ð¾Ð²Ð°Ñ€Ð°: ";
 		getline(cin, item[i].group);
 
-		cout << " Äàòà ïîñòóïëåíèÿ: ";
+		cout << " Ð”Ð°Ñ‚Ð° Ð¿Ð¾ÑÑ‚ÑƒÐ¿Ð»ÐµÐ½Ð¸Ñ: ";
 		getline(cin, item[i].date_reciev);
 
-		cout << " Ñðîê ãîäíîñòè: ";
+		cout << " Ð¡Ñ€Ð¾Ðº Ð³Ð¾Ð´Ð½Ð¾ÑÑ‚Ð¸: ";
 		getline(cin, item[i].date_expired);
 
 		system("CLS");
@@ -47,11 +47,11 @@ void modify(vector<Item>& item, int& size)
 		print(item, size);
 		print();
 
-		cout << "\n Äëÿ íàæìèòå \"0\" - âûõîä èëè \"1\" - ïðîäîëæèòü: ";
+		cout << "\n Ð”Ð»Ñ Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ \"0\" - Ð²Ñ‹Ñ…Ð¾Ð´ Ð¸Ð»Ð¸ \"1\" - Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ: ";
 		i = checkV();
 		if (!i)
 		{
-			cout << "\n\tÑÒÎÏ ÈÇÌÅÍÅÍÈß. EXIT\n";
+			cout << "\n\tÐ¡Ð¢ÐžÐŸ Ð˜Ð—ÐœÐ•ÐÐ•ÐÐ˜Ð¯. EXIT\n";
 			break;
 		}
 	}

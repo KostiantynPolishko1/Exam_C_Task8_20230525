@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<string>
 #include<vector>
 #include<Windows.h>
@@ -23,20 +23,20 @@ int main()
 	{
 		
 
-		cout << "\n  0 - ÂÛÕÎÄ!!!";
-		cout << "\n Ââåäèòå íîìåð îïåðàöèè -> ";
+		cout << "\n  0 - Ð’Ð«Ð¥ÐžÐ”!!!";
+		cout << "\n Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸ -> ";
 
 		fun = checkV();
 		if (fun == 0)
 		{
-			cout << "\n\tÑÒÎÏ ÈÇÌÅÍÅÍÈß. ÂÛÕÎÄ\n";
+			cout << "\n\tÐ¡Ð¢ÐžÐŸ Ð˜Ð—ÐœÐ•ÐÐ•ÐÐ˜Ð¯. Ð’Ð«Ð¥ÐžÐ”\n";
 			break;
 		}
 		fun--;
 
 		if (fun > 5)
 		{
-			cout << "\n\tÇíà÷åíèå âíå äèàïàçîíà 1...5";
+			cout << "\n\tÐ—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð²Ð½Ðµ Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð° 1...5";
 			continue;
 		}
 

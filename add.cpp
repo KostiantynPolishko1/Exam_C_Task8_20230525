@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<vector>
 #include<string>
 #include<Windows.h>
@@ -10,7 +10,7 @@ using namespace std;
 void add(vector<Item>& item, int& size)
 {
 	int n = 0, i = 0;
-	cout << "\n Ââåäòå êîë-âî íîâûõ ïîçèöèé: ";
+	cout << "\n Ð’Ð²ÐµÐ´Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ Ð½Ð¾Ð²Ñ‹Ñ… Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¹: ";
 	n = checkV();
 
 	
@@ -24,23 +24,23 @@ void add(vector<Item>& item, int& size)
 		size++;
 		item.reserve(size);
 
-		cout << "\n Ïîç " << size << endl;
-		cout << " Íàèìåíîâàíèå: ";
+		cout << "\n ÐŸÐ¾Ð· " << size << endl;
+		cout << " ÐÐ°Ð¸Ð¼ÐµÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ: ";
 		getline(cin, temp[i].name);
 
-		cout << " Ïðîèçâîäèòåëü: ";
+		cout << " ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ: ";
 		getline(cin, temp[i].manufacture);
 
-		cout << " Öåíà: ";
+		cout << " Ð¦ÐµÐ½Ð°: ";
 		temp[i].price = checkV();
 
-		cout << " Ãðóïïà òîâàðà: ";
+		cout << " Ð“Ñ€ÑƒÐ¿Ð¿Ð° Ñ‚Ð¾Ð²Ð°Ñ€Ð°: ";
 		getline(cin, temp[i].group);
 
-		cout << " Äàòà ïîñòóïëåíèÿ: ";
+		cout << " Ð”Ð°Ñ‚Ð° Ð¿Ð¾ÑÑ‚ÑƒÐ¿Ð»ÐµÐ½Ð¸Ñ: ";
 		getline(cin, temp[i].date_reciev);
 
-		cout << " Ñðîê ãîäíîñòè: ";
+		cout << " Ð¡Ñ€Ð¾Ðº Ð³Ð¾Ð´Ð½Ð¾ÑÑ‚Ð¸: ";
 		getline(cin, temp[i].date_expired);
 
 		item.push_back(temp[i]);
